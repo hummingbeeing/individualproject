@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <title>JavaScript Trivia Game</title>
+    <link rel=stylesheet href="./static/css/site.css" />
+    <script defer async src="./static/js/main.js"></script>
+</head>
+<body>
+
+<div class="navbar">
+    <strong>JavaScript Trivia Game</strong>
+    <div class="navbar-stat">Correct count: <span id="correct_count">0</span></div>
+    <div class="navbar-stat">Incorrect count: <span id="incorrect_count">0</span></div>
+    <div class="navbar-stat">Lives left: <span id="lives_count">10</span></div>
+</div>
+<div class="left-floating-message" id="message"></div>
+
+<div class="questions-container" id="all_questions">
+    <div class="question">
+        <h3>Which is the only US state to begin with the letter 'p'?</h3>
+        <button onclick="incorrect()">California</button>
+        <button onclick="incorrect()">Washington D.C.</button>
+        <button onclick="correct()">Pennsylvania</button>
+        <button onclick="incorrect()">Canada</button>
+    </div>
+
+    <div class="question">
+        <h3>What is the diameter of Earth?</h3>
+        <button onclick="incorrect()">10 centimeters</button>
+        <button onclick="incorrect()">2 kilometers</button>
+        <button onclick="incorrect()">8 inches</button>
+        <button onclick="correct()">8,000 miles</button>
+    </div>
+
+    <div class="question">
+        <h3>What is the capital city of Spain?</h3>
+        <button onclick="incorrect()">Españalandia</button>
+        <button onclick="incorrect()">Paris, France</button>
+        <button onclick="correct()">Madrid</button>
+        <button onclick="incorrect()">New York City</button>
+    </div>
+
+    <div class="question">
+        <h3>Who was the legendary Benedictine monk who invented champagne?</h3>
+        <button onclick="incorrect()">Duff</button>
+        <button onclick="incorrect()">Sir Fizzy Sparkles</button>
+        <button onclick="correct()">Dom Perignon</button>
+        <button onclick="incorrect()">Don Spumante de Frizzante</button>
+    </div>
+
+    <div class="question">
+        <h3>What is the largest freshwater lake in the world?</h3>
+        <button onclick="correct()">Lake Superior</button>
+        <button onclick="incorrect()">Lake Inferior</button>
+        <button onclick="incorrect()">Lake Itty Bitty</button>
+        <button onclick="incorrect()">Lake Toilet</button>
+    </div>
+
+    <div class="question">
+        <h3>Who invented rabies vaccination?</h3>
+        <button onclick="incorrect()">Sir Francis Bacon and Eggs</button>
+        <button onclick="correct()">Louis Pasteur</button>
+        <button onclick="incorrect()">Dunder Mifflin</button>
+        <button onclick="incorrect()">Louis Rabies-Be-Gone</button>
+    </div>
+</div>
+
+<!--
+    HINT: CSS is already written for:
+    <h1 class="gameover">GAME OVER!</h1>
+    <h1 class="gameover">YOU WIN!</h1>
+    (see hints.txt for some ideas on how to use JS to do this)
+-->
+
+</body>
+</html>

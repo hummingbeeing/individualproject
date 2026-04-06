@@ -1,0 +1,41 @@
+Hint 1: Think about creating functions for "correct" and "incorrect",
+and connecting them to the buttons.
+
+Hint 2: Think about creating variables to count correctCount and
+incorrectCount, and using "correctCount++" etc to increase them
+
+Hint 3: Think about creating variables to count lives and and using
+"lives--" to decrease them.
+
+Hint 4: Think about using querySelector and innerHTML to update the page
+with your various count variables.
+
+Hint 5: The hardest part might be "GAME OVER" and "YOU WIN". This will
+require an "if" along with using querySelector. If you are stuck with
+this, see the hint code snippets at the bottom.
+
+
+
+
+--------------
+
+
+
+
+
+Hint Snippet #1:
+
+    if (lives === 0) {
+        ...something goes here...
+    }
+
+Hint Snippet #2:
+
+    document.querySelector('#all_questions').innerHTML = ...something here...
+
+Hint Snippet #3:
+
+    if (correctCount === 5) {
+        ...something goes here...
+    }
+
