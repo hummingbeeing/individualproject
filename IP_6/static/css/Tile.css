@@ -1,0 +1,71 @@
+.Tile {
+  padding: 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  color: black;
+  font-size: 25px;
+  font-family: sans-serif;
+  margin-left: 5px;
+  margin-top: 2px;
+  border: 1px solid gray;
+  border-radius: 1px 8px 1px 8px;
+  box-shadow: inset -3px -3px 1px 1px rgba(100, 100, 100, 0.3);
+  cursor: arrow;
+  min-width: 50px;
+  text-align: center;
+  height: 70px;
+  user-select: none;
+  transition: background-color 0.8s, box-shadow 0.8s;
+}
+
+.Tile--empty {
+    background-color: #eeeeeecc;
+  height: 70px;
+  width: 140px;
+}
+
+
+.Tile--number:active,
+.Tile--number:hover {
+    border: 3px solid  #efef9199;
+}
+
+.Tile--number {
+    color: black;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    min-width: none;
+    height: auto;
+    border: 3px solid  #efef9100;
+}
+
+.Tile--highlight {
+    background-color: #ffffa1bb;
+    box-shadow:
+        inset -3px -3px 1px 1px rgba(100, 100, 100, 0.3),
+        0 0 10px 10px #efef91bb;
+}
+
+/* This is how the "data-value" affects background color */
+[data-value="1"]  { background-color: #c5eb9b; }
+/*[data-value="2"]  { background-color: #ee9ed5; }*/
+[data-value="3"]  { background-color: #e1ed73; }
+[data-value="4"]  { background-color: #fffd83; }
+[data-value="5"]  { background-color: #9e95ec; }
+/*[data-value="6"]  { background-color: #dfef71; }*/
+[data-value="7"]  { background-color: #c5e99c; }
+[data-value="8"]  { background-color: #a5bed9; }
+[data-value="9"]  { background-color: #ee9ed5; }
+[data-value="10"] { background-color: #a895e9; }
+[data-value="11"] { background-color: #c0b8c8; }
+[data-value="12"] { background-color: #edb9b1; }
+[data-value="13"] { background-color: #c5e99c; }
+[data-value="14"] { background-color: #b889c1; }
+[data-value="15"] { background-color: #b4e5b5; }
+[data-value="16"] { background-color: #ee9ed5; }
+[data-value="17"] { background-color: #aeeaba; }
+[data-value="18"] { background-color: #ee9ed5; }
+[data-value="19"] { background-color: #c4ed9a; }
+[data-value="20"] { background-color: #ef9fd3; }
+
