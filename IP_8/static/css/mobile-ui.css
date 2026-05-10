@@ -1,0 +1,136 @@
+/*
+
+  TODO: Make the grid show different quantity of items
+  based on the following "breakpoints":
+  
+                  min        max    grid
+  desktop        1100px             4 items
+  large tablet   900px     1100px   3 items
+  small tablet   600px      900px   2 items
+  mobile                    600px   1 item
+  
+*/
+
+
+.Products {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+/* Modal-window has already been tweaked to look better on mobile: */
+@media (max-width: 600px) {
+
+    .App {
+        margin-top: 260px;
+    }
+
+    .Item {
+        padding: 15px;
+    }
+
+    .Item-title {
+        font-size: 20px;
+    }
+
+    .Navbar-button {
+        font-size: 20px;
+    }
+
+    /* Prevent text overflow by shrinking font */
+    .Modal-window {
+        font-size: 1.4rem;
+        text-align: left;
+        left: 0;
+        width: 100%;
+        height: auto;
+        top: 20vh;
+    }
+}
+
+
+/* TODO: Add extra styling, if needed for hamburger menu */
+
+
+@media (min-width: 1101px) {
+
+    .Navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    .Navbar-links {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .Navbar-menuToggle {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1100px) and (min-width: 901px) {
+
+    .Navbar {
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .Navbar-links {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .Navbar-menuToggle {
+        display: none;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .App {
+        margin-top: 220px;
+    }
+
+    .Navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Navbar-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .Navbar-links.collapsed {
+        display: none;
+    }
+
+    .Navbar-menuToggle {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 10px;
+        user-select: none;
+    }
+
+    .Navbar-button {
+        width: 100%;
+        text-align: left;
+    }
+}
